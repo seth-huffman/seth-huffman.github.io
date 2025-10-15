@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wishlist 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            
+            /* Background image + gradient overlay */
+            background:
+                linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), /* dark overlay for text */
+                url('background.jpg') center/cover no-repeat;      /* your image */
+
+            z-index: 0;
+                animation: float 20s ease-in-out infinite;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            
+            /* floating radial gradients */
+            background:
+                radial-gradient(circle at 30% 40%, rgba(76, 175, 80, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 70% 60%, rgba(56, 142, 60, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 50% 50%, rgba(102, 187, 106, 0.08) 0%, transparent 30%);
+            
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(5deg); }
+            66% { transform: translate(-20px, 20px) rotate(-5deg); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin: 160px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 5.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            font-family: "Leckerli One", cursive;
+            font-weight: 400;
+            font-style: normal;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            line-height: 1;
+        }
+
+        .subtitle {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(40px) saturate(200%);
+            -webkit-backdrop-filter: blur(40px) saturate(200%);
+            border-radius: 28px;
+            padding: 0;
+            box-shadow: 
+                0 1px 1px rgba(255, 255, 255, 0.25) inset,
+                0 8px 32px rgba(0, 0, 0, 0.35),
+                0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            opacity: 0.8;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 
+                0 1px 2px rgba(255, 255, 255, 0.3) inset,
+                0 16px 56px rgba(0, 0, 0, 0.5),
+                0 2px 0 rgba(255, 255, 255, 0.15);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .card-content {
+            padding: 32px 28px;
+        }
+
+        .card-header {
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #f5f5f7;
+            line-height: 1.3;
+            letter-spacing: -0.3px;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            color: #d1d1d6;
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+        }
+
+
+        @media (max-width: 768px) { 
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                text-align: center;
+                margin: 160px 20px;
+            }
+            .subtitle {
+                display: none
+            }
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <header>
+            <h1>Christmas Wishlist</h1>
+            <p class="subtitle">My dream gifts this holiday season</p>
+        </header>
+        <div class="grid" id="cardGrid"></div>
+    </div>
+
+    <script>
+        const cardData = [
+        ///////////////////////////////////////
+        // Garage
+        ///////////////////////////////////////
+        { title: "Air Pump", description: "Compact, Lightweight, and Portable. Perfect for bikes and more. Fills a tire in just 25 seconds.", url: "https://hototools.com/products/air-pump-pocket" },
+        { title: "Gear Wrench", description: "The Trap Mat Universal Tool Storage System from GEARWRENCH is customizable and will fit any 2 in. deep or deeper drawer.", url: "https://www.homedepot.com/p/GEARWRENCH-Trap-Mat-Universal-Tool-Holder-4-Piece-83370/312584370?g_store=&source=shoppingads&locale=en-US&pla&utm_source=google&utm_medium=vantage&utm_campaign=56307&utm_content=58643&mtc=SHOPPING-RM-RMP-GGL-D25H-Multi-NA-GEARWRENCH-NA-PMAX-NA-NA-MK713449001-56307-NBR-3313-NA-VNT-FY25_Q1_Q4_Apex_Tool_Group_GEARWRENCH_D25H_OAM_SILVER_AON_BAU_Opportunity&cm_mmc=SHOPPING-RM-RMP-GGL-D25H-Multi-NA-GEARWRENCH-NA-PMAX-NA-NA-MK713449001-56307-NBR-3313-NA-VNT-FY25_Q1_Q4_Apex_Tool_Group_GEARWRENCH_D25H_OAM_SILVER_AON_BAU_Opportunity-22318465147--&gclsrc=aw.ds&gad_source=1&gad_campaignid=22314811433&gbraid=0AAAAAolLu9_W96_f6D2U_xGsfNhlaEMi4&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_XgN3gw2bef43yq5wAAIqlP4IhRBFspvTBWMoDkzYavUjZYKc7rhXsaAo9xEALw_wcB" },
+        { title: "Packout Wall Mount", description: "The Milwaukee Packout Racking Kit includes racking shelves and 2 E-Tracks that allow users to mount their racking system.", url: "https://www.homedepot.com/p/Milwaukee-PACKOUT-20-in-H-x-22-in-W-Slatwall-Accessories-Black-Resin-Racking-Kit-with-Metal-Reinforced-Frame-and-Handle-48-22-8480/321235732" },
+        { title: "Socket Holder", description: "Heavy Duty Aluminum Socket Rail Organizer, Swivel Clips Socket Holder Kit for Tool Box, 3/8-Inch Socket Holder x 14 Clips - Black.", url: "https://www.amazon.com/ALOANES-8-Inch-Magnetic-Organizer-Aluminum/dp/B0CKNZHFW2/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.2da95b6c-f59a-4699-bc43-d0ff036c6388%3Aamzn1.sym.2da95b6c-f59a-4699-bc43-d0ff036c6388&cv_ct_cx=socket%2Borganizer&keywords=socket%2Borganizer&pd_rd_i=B0CKNZYVHZ&pd_rd_r=3421c4c4-35f4-4ee9-aa4b-469498dfe19f&pd_rd_w=HydbB&pd_rd_wg=NygGr&pf_rd_p=2da95b6c-f59a-4699-bc43-d0ff036c6388&pf_rd_r=5PVXCHQC3TS0C1XHZE76&qid=1753403698&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-5-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" },
+        { title: "Bit Holder", description: "These racks and organizers sort and store screwdrivers and bits for quick identification and selection.", url: "https://www.grainger.com/product/852HA5?gucid=N:N:PS:Paid:GGL:CSM-2293:MJWIUV:20500801:APZ_1&gclsrc=aw.ds&gad_source=1&gad_campaignid=21369509988&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_W3Ybw1nT_yybVD45iJfsGvEmG1Ef1Gjp-KG1hQDd9eP0E9Gs4CTIwaArwaEALw_wcB" },
+        { title: "Tool Holder", description: "Tool Box Foam, 4Pack 16x12x1 inch, Foam Inserts for Cases, Polyethylene Storage Sheets for Toolbox Hard Case.", url: "https://www.amazon.com/ONREVA-16x12x1-Inserts-Polyethylene-Organizer/dp/B0DMTH6B79/ref=sr_1_6?crid=V8EPHXAYD0TF&dib=eyJ2IjoiMSJ9.FcmUqpDGe_5rTHlt1PJnp1SQUbRzNtKvLiMzGs4ZqI4g44C1NvcSM-54eD7TH6MdBISwAyYkBMGcBxoEJXYSs4937XPZaasq8mApEbUYFGMxQBojM47AiTBgP5o1U0e4BOpvq7hUUhiFCG9qXXzn9y7J7rDxDcQk8eb-MK4RkSUU1NQIowuWxlDH2wh0TlGzZOEjRdBXdouK8UXJoB2Tp2n0gZ5rdN5Ixu3pBLPwwUzkLSOplhobH3963VkKJ3iFCsBvGXwDm0nIZfmx8F8QPgaADbr8GTntZeALyF_sook.VaUfFsoT7FAG6E8EJBr4d4vKdWQB_rQ-wY-HJZNdsBw&dib_tag=se&keywords=foam+organizer&qid=1753404362&sprefix=foam+organizer%2Caps%2C156&sr=8-6" },
+        { title: "Alen Wrench Set", description: "The Milwaukee 11-Key Electrician's Folding Hex Key Set features the easiest access keys on the market.", url: "https://www.homedepot.com/p/Milwaukee-Electrician-s-SAE-Folding-Hex-Key-Set-11-Piece-48-22-2180/326839406" },
+        { title: "Garage Storage", description: "Easily install this Regular Duty Welded 24-Gauge Steel Freestanding Garage Cabinet in Black (31 in. W x 75 in. H x 20 in. D). ", url: "https://www.homedepot.com/p/Husky-Regular-Duty-Welded-24-Gauge-Steel-Freestanding-Garage-Cabinet-in-Black-30-5-in-W-x-75-in-H-x-19-6-in-D-G3002L-US/312050627" },
+
+        ///////////////////////////////////////
+        // Bathroom
+        ///////////////////////////////////////
+        { title: "Razor", description: "Braun electric shaver delivers a close shave faster, thanks to the floating flex head that adapts to your contours for a close shave.", url: "https://www.bestbuy.com/product/braun-series-7-wet-dry-electric-shaver-with-smart-center-grey/J7SG48255W/sku/6568631?extStoreId=7&utm_source=chatgpt.com" },
+        // { title: "Bathroom Drawer Inserts", description: "", url: "" },
+        // { title: "Cabinet Drawers", description: "", url: "" },
+        // { title: "Pull Out Trash", description: "", url: "" },
+
+        ///////////////////////////////////////
+        // Technology
+        ///////////////////////////////////////
+        { title: "3D Printer", description: "Product Features: Works right out of the box, set up in 15 minutes, Well-polished hardware and software.", url: "https://us.store.bambulab.com/products/p1s?id=583855874739507213" },
+        { title: "Smart Shades Link", description: "Control your motorized shades with one Smart Link per room, ensuring reliable performance throughout your home.", url: "https://www.smartwingshome.com/products/smart-link" },
+        { title: "AirPods", description: "Introducing the world’s best in-ear Active Noise Cancellation for the most immersive listening experience ever.", url: "https://www.amazon.com/Apple-Cancellation-Translation-Headphones-High-Fidelity/dp/B0FQFB8FMG/ref=sr_1_1_sspa?crid=3HSHDH5A8OFYW&dib=eyJ2IjoiMSJ9.3tFd_q22aHE5XKXSLtjcPawEdOSnCV6NgutHkwR9cwwuiAa8NGnMVxybmB2amDBHC01RHi4z8XGpiIbq4nLlblpvMCA5afAJJj2IuBbHFjgPI7g_uzyvfbnJ5bP55-1xKYFYOoJbjasBZwcUhNYq20hmx72OTeWvj2TnHH6AP9tGINw9oGv1ugNBX6eoYJ7CJsAqhE4BLPdWrzk8VkEHSmBY3bCPFV1TbNzQxNmCi0s.mIwfRChoxBqJ05ITBV5lIbn8deJipeCT08_czN87V10&dib_tag=se&keywords=airpods+pro+3&qid=1760106745&sprefix=airpods%2Caps%2C312&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" },
+        { title: "AirPods Case", description: "Precision fit, this case protects your AirPods from everyday wear and tear while giving them a sleek leather look.", url: "https://nomadgoods.com/products/modern-leather-case-airpods-pro-3-horween-rustic-brown" },
+        { title: "External Hard Drive", description: "SanDisk Extreme 1TB Portable External SSD Flash Storage Drive - Black (The most boring gift on the list. - Sidney.)", url: "https://www.target.com/p/sandisk-extreme-1tb-portable-external-ssd-flash-storage-drive-black/-/A-82667995?ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000012767085&CPNG=PLA_Electronics_Priority%2BShopping_Local%7CElectronics_Ecomm_Hardlines&adgroup=Electronics_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9017954&targetid=aud-809535968620:pla-829115309686&ds_rl=1246978&ds_rl=1248099&gad_source=1&gclid=Cj0KCQjwy4KqBhD0ARIsAEbCt6jSPOj93q747SLCX062DW-ptbQ9B0Y0O_spkar31lxEQzU-EhmWEP4aAvcgEALw_wcB&gclsrc=aw.ds" },
+        // { title: "Apple TV", description: "", url: "" },       
+        // { title: "External Camera", description: "", url: "" },     
+        { title: "Computer Monitor", description: "Samsung - 27” Odyssey G50D QHD IPS 180Hz 1ms AMD FreeSync and G-Sync Compatible Gaming Monitor with HDR 400", url: "https://www.bestbuy.com/product/samsung-27-odyssey-g50d-qhd-ips-180hz-1ms-amd-freesync-and-g-sync-compatible-gaming-monitor-with-hdr-400-displayport-hdmi-black/J3ZYG2HYQS" },
+
+        ///////////////////////////////////////
+        // Other
+        ///////////////////////////////////////
+        { title: "Cymbals", description: "The Zildjian A Custom Fast Crash cymbal gives you a short decay. Nice high-end pitch. Quick response. Brilliant finish.", url: "https://www.guitarcenter.com/Zildjian/A-Custom-Fast-Crash-18-in-1273887990327.gc?algoliaQueryID=200971c2503ffb7cf8752111b221af28&algoliaIndexName=guitarcenter" },
+        { title: "Drum Sticks", description: "There's nothing worse than running out of sticks. The Vater Hickory Drum Stick Prepack is perfect for replenishing your stick bag.", url: "https://www.guitarcenter.com/Vater/Hickory-Drum-Stick-Pre-pack-Wood-5A-1274115051445.gc?algoliaQueryID=290defd634c7e4316224da84cb06d795&algoliaIndexName=guitarcenter" },
+
+        ///////////////////////////////////////
+        // Bedroom
+        ///////////////////////////////////////
+        { title: "Smart Shades", description: "MT: Inside, Fabric: White, MT: Zigbee Motor, Valance: Standard, BB: Standard, SP: None, RC: None, RT: Reverse, MS: Right", url: "https://www.smartwingshome.com/products/smartwings-motorized-light-filtering-roller-shades-70-blackout-linen?variant=40737905279173" },
+        // { title: "Bedroom Set", description: "", url: "" },
+        
+        ///////////////////////////////////////
+        // Clothing
+        ///////////////////////////////////////
+        { title: "Backpack", description: "Cocoon MCP3401GF Slim 15 - Backpack with Built-in Grid-IT!® Accessory Organizer (Graphite Gray)", url: "https://www.amazon.com/Cocoon-MCP3401GF-Backpack-Accessory-Organizer/dp/B010E47IR4/ref=sr_1_16?crid=359JMXFMYW6JC&dib=eyJ2IjoiMSJ9.pxhIeo_VeWrI1RBQTYEXfQ-JwCt-amXoQ_8exwaRz8hErW9i5IOoz-jnUknMThbgzSGC2KMCTj2IGFC55xstILE42oOAZbDF-5B1GqjQDHqYEDPo1oWVkHuiwzSCiQ_CemRfhejTgnx6sYUNcTmOs-CWnbH3Su4NTQAC_bPZblX8GBMDXuFRGOYMNInZiSsw0xpbqjQT4VAy1u7OsOrJOF6062VwrcpOzjvd6JR1tWc.HkSrAxniNIuKlT1eOY9mhIgrVYA0qWpbY1RLRBEsfaE&dib_tag=se&keywords=grid+it+backpack&qid=1760383122&sprefix=grid+itback%2Caps%2C91&sr=8-16" },
+        { title: "Chelsea Boot", description: "Shoe Size: 9.5. This Chelsea boot features a smooth leather upper and OrthoLite® footbed for daylong comfort.", url: "https://www.dsw.com/product/florsheim-chalet-plain-toe-chelsea-boot/503783?activeColor=215" },  
+
+        ];
+
+    const grid = document.getElementById('cardGrid');
+
+    cardData.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.onclick = () => window.open(item.url, '_blank');
+      card.innerHTML = `
+        <div class="card-content">
+          <div class="card-header">
+            <h3 class="card-title">${item.title}</h3>
+          </div>
+          <p class="card-description">${item.description}</p>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
