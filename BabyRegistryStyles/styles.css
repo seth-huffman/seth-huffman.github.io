@@ -1,0 +1,97 @@
+:root {
+  --rose: #cf9a90;
+  --rose-deep: #b97b70;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ecdfdd;
+  background-image: linear-gradient(to right, #ecdfdd 0%, rgba(236, 223, 221, 0.5) 18%, rgba(236, 223, 221, 0) 35%), linear-gradient(to top, #ecdfdd 0%, rgba(236, 223, 221, 0.5) 18%, rgba(236, 223, 221, 0) 35%), url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.75rem;
+  padding: 2rem;
+  width: min(calc(100vw - 4rem), 640px);
+  min-width: 0;
+  margin: 2rem;
+}
+
+.header {
+  align-self: stretch;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.details {
+  font-style: normal;
+  font-family: Didot, "Bodoni MT", "Playfair Display", Georgia, serif;
+  color: var(--rose-deep);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 400px;
+  padding: 0px 40px;
+}
+
+.actions {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0px 40px;
+}
+
+.btn {
+  padding: 0.9em 2em;
+  border-radius: 16px;
+  color: var(--rose-deep);
+  background: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  backdrop-filter: blur(3px);
+}
+
+@media (max-width: 1500px) {
+  body {
+    background-position-x: 15vw;
+    background-position-y: 0vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-position-x: 25vw;
+    background-position-y: 0vw;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-position-x: 30vw;
+    background-position-y: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-wrap: wrap;
+  }
+}
