@@ -2,6 +2,7 @@ const cardData = [
 ////////////////////////////////////////
 // Garage
 ////////////////////////////////////////
+{ title: "Storage Cabinet", description: "VEVOR Metal Storage Cabinet, 120lbs Load Capacity per Shelf", url: "https://www.amazon.com/VEVOR-Cabinet-Metal-Storage-Mounted/dp/B0BWR5SJHV" },
 { title: "Garage Storage", description: "Easily install this Regular Duty Welded 24-Gauge Steel Freestanding Garage Cabinet in Black (31 in. W x 75 in. H x 20 in. D). ", url: "https://www.homedepot.com/p/Husky-Regular-Duty-Welded-24-Gauge-Steel-Freestanding-Garage-Cabinet-in-Black-30-5-in-W-x-75-in-H-x-19-6-in-D-G3002L-US/312050627" },
 { title: "Gorilla Ladder", description: "14-ft Reach Aluminum 2-in-1 Extension Multi-Position Ladder with Project Bucket", url: "https://www.homedepot.com/p/Gorilla-Ladders-14-ft-Reach-Aluminum-2-in-1-Extension-Multi-Position-Ladder-with-Project-Bucket-300-lbs-Capacity-Type-1A-Duty-Rating-GL2A-11/325683432" },
 { title: "Milwaukee Table Saw", description: "M18 FUEL ONE-KEY 18-Volt Lithium-Ion Brushless Cordless 8-1/4 in. Table Saw (Tool-Only)", url: "https://www.homedepot.com/p/Milwaukee-M18-FUEL-ONE-KEY-18-Volt-Lithium-Ion-Brushless-Cordless-8-1-4-in-Table-Saw-Tool-Only-2736-20/307744663" },
@@ -29,7 +30,6 @@ const cardData = [
 ///////////////////////////////////////
 // Kitchen
 ///////////////////////////////////////
-{ title: "Garage Door", description: "A primed fiberglass door with clear glass panels for a bright, finished entryway.", url: "https://www.homedepot.com/p/JELD-WEN-32-in-x-80-in-2-Panel-Right-Hand-Inswing-3-Lite-Clear-Direct-Glaze-Primed-Fiberglass-Prehung-Front-Door-w-Brickmould-JW255700002/337787509" },
 // { title: "Kitchen Light", description: "", url: "" }, - Figure out kitchen goal
 
 ///////////////////////////////////////
