@@ -42,7 +42,7 @@ const cardData = [
 ///////////////////////////////////////
 // Bathroom 
 ///////////////////////////////////////
-{ title: "Flooring", description: "Walnut-look porcelain tile for a durable, wood-inspired bathroom floor", url: "http://homedepot.com/p/Daltile-Baker-Wood-6-in-x-24-in-Walnut-Glazed-Porcelain-Floor-and-Wall-Tile-14-55-sq-ft-Case-BK10624HD1PR/313050938" },
+{ title: "Flooring", description: "6 boxes - Walnut-look porcelain tile for a durable, wood-inspired bathroom floor", url: "http://homedepot.com/p/Daltile-Baker-Wood-6-in-x-24-in-Walnut-Glazed-Porcelain-Floor-and-Wall-Tile-14-55-sq-ft-Case-BK10624HD1PR/313050938" },
 
 ///////////////////////////////////////
 // Entryway
