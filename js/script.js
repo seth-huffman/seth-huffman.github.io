@@ -71,7 +71,12 @@ const cardData = [
 { title: "Smart Shades Link", description: "Control your motorized shades with one Smart Link per room, ensuring reliable performance throughout your home.", url: "https://www.smartwingshome.com/products/smart-link" },      
 { title: "Computer Monitor", description: "Computer monitor.", url: "http://bestbuy.com/product/samsung-32-odyssey-g51f-qhd-180hz-1ms-amd-freesync-gaming-monitor-with-hdr10-displayport-hdmi-black/JJGRF33JCX/sku/6618904" },
 // { title: "Apple TV", description: "", url: "" }, - wait
-{ title: "Dyson Air Purifier", description: "", url: "https://www.amazon.com/Dyson-PC1-Purifier-Cool/dp/B0F3FZZ5QZ/ref=mp_s_a_1_2?crid=1MU278SZF66FT&dib=eyJ2IjoiMSJ9.WfG230kHMiucq7SAVYSqqc7gS8tJLI0CU6garAImfsKEiCjmluKehN8fDpUKtAH6qPoHBNdUgqHnFPubFZVyi1xhHGYxflUrPFL0ze986jdx_5_iD5cV-UILrdV87c9e2ivhUNviRF4f5rG_UFS7Y1DD0HYYZEyM27sEfkbi9TcZNMCK691646hDVusETO_6FYzSjDXBPwJRQVFcohlR0g.zVWxCOSLSowb156hpUk-O1wlZW7ukK3hl4PprvlZ-bc&dib_tag=se&keywords=dyson%2Bair%2Bpurifier%2Bcool%2Bpc&qid=1788615776&sprefix=dyson%2Bair%2Bpurifier%2Bcool%2Bpc%2Caps%2C189&sr=8-2&th=1" }
+{ title: "Dyson Air Purifier", description: "", url: "https://www.amazon.com/Dyson-PC1-Purifier-Cool/dp/B0F3FZZ5QZ/ref=mp_s_a_1_2?crid=1MU278SZF66FT&dib=eyJ2IjoiMSJ9.WfG230kHMiucq7SAVYSqqc7gS8tJLI0CU6garAImfsKEiCjmluKehN8fDpUKtAH6qPoHBNdUgqHnFPubFZVyi1xhHGYxflUrPFL0ze986jdx_5_iD5cV-UILrdV87c9e2ivhUNviRF4f5rG_UFS7Y1DD0HYYZEyM27sEfkbi9TcZNMCK691646hDVusETO_6FYzSjDXBPwJRQVFcohlR0g.zVWxCOSLSowb156hpUk-O1wlZW7ukK3hl4PprvlZ-bc&dib_tag=se&keywords=dyson%2Bair%2Bpurifier%2Bcool%2Bpc&qid=1788615776&sprefix=dyson%2Bair%2Bpurifier%2Bcool%2Bpc%2Caps%2C189&sr=8-2&th=1" },
+
+///////////////////////////////////////
+// Clothing
+///////////////////////////////////////
+{ title: "Under Armour Sweatpants", description: "UA Icon Fleece Joggers, color Timberwolf Taupe Light Heather (oatmeal/beige with tonal logo). Found at Dick's.", url: "https://www.dickssportinggoods.com/p/under-armour-mens-icon-fleece-joggers-22uarmssntlflcjggapb/22uarmssntlflcjggapb" }
 ];
 
 const grid = document.getElementById('cardGrid');
